@@ -7,6 +7,7 @@ To run this app localy
 
 - cd myapp
 - bundle install
+- yarn install --check-files
 - bundle exec rake db:migrate
 - bundle exec rake db:seed
 - rails s -p 5000
