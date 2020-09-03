@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "rename"
-# gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', :require => 'rack/cors'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -44,7 +44,7 @@ group :development do
   gem 'faker'
 
   # Use sqlite3 as the database for Active Record
-  # gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3', '~> 1.4'
 end
 
 group :test do

@@ -2,7 +2,8 @@ module Api
     module V1
         class MovieListsController < ApplicationController
             def index
-                movie_lists = MovieList.order('created_at DESC')
+                movie_lists = MovieList.all
+                movie_lists = movie_lists.map{|ml| {id: ml.id, title:ml.title, movieNum:ml.movies.length}}
                 render json: {
                     status: "SUCCESS",
                     message: "Your movie lists",
