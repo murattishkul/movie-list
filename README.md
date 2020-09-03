@@ -11,3 +11,4 @@ To run this app localy
 - bundle exec rake db:migrate
 - bundle exec rake db:seed
 - rails s -p 5000
+- navigate to http://localhost:3000/
